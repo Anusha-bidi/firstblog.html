@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KodNest Times</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Georgia", serif;
+    background: linear-gradient(135deg, #dfe9f3, #ffffff);
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Main container */
+.newspaper {
+    max-width: 1300px;
+    margin: 30px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    border-bottom: 4px solid #1e3a8a;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    font-size: 4rem;
+    letter-spacing: 6px;
+    color: #1e3a8a;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+.header p {
+    font-style: italic;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+/* HEADLINE */
+.headline {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.headline h2 {
+    font-size: 2.6rem;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.headline p {
+    color: #444;
+    font-size: 1.1rem;
+}
+
+/* MAIN IMAGE */
+.main-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.main-image:hover {
+    transform: scale(1.01);
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* ARTICLE */
+.article {
+    column-count: 2;
+    column-gap: 30px;
+    text-align: justify;
+}
+
+/* Make paragraphs feel like cards */
+.article p {
+    background: #f9fafb;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-left: 4px solid #1e3a8a;
+    border-radius: 6px;
+}
+
+/* HIGHLIGHT BOX */
+.highlight {
+    background: linear-gradient(135deg, #e0f2fe, #f0f9ff);
+    padding: 18px;
+    border-left: 6px solid #2563eb;
+    border-radius: 8px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* SIDEBAR */
+.sidebar {
+    padding-left: 20px;
+    border-left: 2px solid #eee;
+}
+
+.sidebar h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #1e3a8a;
+    border-bottom: 2px solid #1e3a8a;
+    padding-bottom: 5px;
+}
+
+.sidebar img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.sidebar img:hover {
+    transform: scale(1.03);
+}
+
+.sidebar p {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    background: #1e3a8a;
+    color: white;
+    border-radius: 10px;
+}
+
+.footer h3 {
+    margin-bottom: 5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .article {
+        column-count: 1;
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .headline h2 {
+        font-size: 1.8rem;
+    }
+}
+</style>
+</head>
+
+
+<body>
+
+<div class="newspaper">
+
+    <div class="header">
+        <h1>KodNest Times</h1>
+        <p>From Learning to Earning • Bangalore Edition</p>
+    </div>
+
+    <div class="headline">
+        <h2>How KodNest is Transforming Software Careers in Bangalore</h2>
+        <p>Empowering students with real-world projects, mentorship, and placement opportunities.</p>
+    </div>
+
+    <!-- Replace with actual KodNest image -->
+    <img class="main-image"
+     src="https://apktodo.io/uploads/2025/7/kodnest-app-1.jpg"
+         alt="KodNest">
+
+    <div class="grid">
+
+        <div>
+
+            <div class="highlight">
+                KodNest focuses on practical learning, live projects,
+                unlimited placement opportunities, and one-on-one mentorship.
+            </div>
+
+            <div class="article">
+
+                <p>
+                    KodNest Technologies has emerged as one of Bangalore's
+                    fastest-growing software training and placement institutes.
+                    With a mission to bridge the gap between education and
+                    employment, the organization helps graduates become
+                    industry-ready professionals.
+                </p>
+
+                <p>
+                    The institute offers specialized career paths in Java
+                    Full Stack Development, Python Full Stack Development,
+                    and Software Testing. Students gain practical experience
+                    through project-based learning and mentorship from
+                    experienced industry professionals.
+                </p>
+
+                <p>
+                    Unlike traditional training centers, KodNest emphasizes
+                    hands-on implementation. Learners work on real-world
+                    applications while preparing for technical interviews,
+                    coding assessments, and placement drives.
+                </p>
+
+                <p>
+                    Located in Bangalore, India's technology hub, KodNest
+                    provides students with access to a thriving ecosystem of
+                    startups, service companies, and product-based
+                    organizations.
+                </p>
+
+                <p>
+                    The institute highlights its placement-focused approach,
+                    helping students improve technical knowledge, problem
+                    solving abilities, and professional communication skills.
+                </p><br>
+
+                <p>
+                    KodNest Technologies has established itself as a career-focused technology
+training institute dedicated to preparing students for the modern software
+industry. As technology continues to evolve rapidly, companies increasingly
+seek professionals who possess not only theoretical knowledge but also
+practical experience. KodNest addresses this challenge by creating an
+ecosystem where students can learn, practice, and apply their knowledge
+through structured training programs and industry-oriented projects.
+                </p></br>
+
+                <p>
+                  The institute's training methodology emphasizes experiential learning.
+Instead of relying solely on classroom instruction, students participate in
+coding exercises, project development, mock interviews, and technical
+assessments that mirror real-world hiring processes. This approach enables
+learners to gain confidence in their technical abilities while developing
+the problem-solving skills required in professional software environments.  
+                </p><br>
+
+                <p>
+                    One of the distinguishing factors of KodNest is its commitment to
+continuous mentorship. Students receive guidance from experienced trainers
+who help them understand complex technical concepts, improve coding
+standards, and develop industry best practices. This mentorship model
+creates an environment where learners can overcome challenges, clarify
+doubts, and accelerate their professional growth.
+                </p><br>
+
+                <p>
+                    Various career paths are offered at KodNest, including Java Full Stack
+Development, Python Full Stack Development, and Software Testing. Each path is designed to equip students with the specific skills and knowledge required for their chosen domain. By focusing on practical implementation, KodNest ensures that graduates are not only proficient in coding but also understand how to apply their skills in real-world scenarios.
+                </p><br>
+                <p>
+                    The curriculum at KodNest is designed to align with current industry
+expectations. Training programs cover programming languages, web
+technologies, database management systems, software testing frameworks,
+version control systems, and development methodologies commonly used in
+technology companies. By focusing on industry-relevant tools and
+technologies, the institute ensures that students remain competitive in
+today's job market.
+                </p><br>
+
+                <p>
+                    Project-based learning plays a central role in the educational experience.
+Students work on applications that simulate real business requirements,
+allowing them to understand software architecture, development lifecycles,
+team collaboration, and deployment practices. These projects become valuable
+portfolio assets that can be showcased during interviews and recruitment
+processes.
+                </p><br>
+
+                <p>
+                    Beyond technical training, KodNest places significant emphasis on career
+development. Dedicated sessions on aptitude preparation, communication
+skills, resume building, and interview techniques help students present
+their abilities effectively to potential employers. This holistic approach
+ensures that graduates are equipped with both technical competence and
+professional confidence.
+                </p><br>
+
+        <p>
+            The placement support ecosystem includes recruitment drives, networking
+opportunities, and interview preparation activities designed to connect
+students with employment opportunities. By creating pathways between
+learners and hiring organizations, KodNest contributes to improving
+employability and career readiness among aspiring software professionals.
+        </p><br>
+        
+
+            </div>
+
+        </div>
+
+        <div class="sidebar">
+
+            <h3>Featured Stories</h3>
+
+            <!-- Replace with KodNest images -->
+            <img src="https://apktodo.io/uploads/2025/7/kodnest-app-1.jpg" alt="Students">
+
+            <p>
+                Students engage in live coding sessions and collaborative
+                project development.
+            </p>
+            <br>
+           
+
+            <br>
+
+            <img src="https://content3.jdmagicbox.com/v2/comp/bangalore/v9/080pxx80.xx80.181027023550.w3v9/catalogue/kodnest-btm-layout-1st-stage-bangalore-computer-training-institutes-mxdc9oi9in.jpg" alt="Training">
+
+            <p>
+                Mentorship and career guidance help learners become
+                interview-ready professionals.
+            </p> <br>
+            
+
+            <br>
+
+            <img src="https://content.jdmagicbox.com/v2/comp/bangalore/f2/080pxx80.xx80.230324040345.u5f2/catalogue/kodnest-technologies-pvt-ltd-btm-layout-2nd-stage-bangalore-institutes-nzl7qx0o04.jpg" alt="Placement">
+
+            <p>
+                Placement drives connect aspiring developers with hiring
+                companies.
+            </p><br>
+           
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <h3>KodNest Technologies • Bangalore</h3>
+        <p>Code • Transform • Succeed</p>
+    </div>
+
+</div>
+
+</body>
+</html>
